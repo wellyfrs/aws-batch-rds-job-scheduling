@@ -15,8 +15,8 @@ Resources:
     Properties:
       AllocatedStorage: 20
       DBInstanceClass: db.m4.large
-      DBName: "pgdb"
-      Engine: "postgres"
+      DBName: "mysqldb"
+      Engine: "mysql"
       MasterUsername: !Join ['', ['{{resolve:secretsmanager:', !Ref RDSInstanceSecret, ':SecretString:username}}' ]]
       MasterUserPassword: !Join ['', ['{{resolve:secretsmanager:', !Ref RDSInstanceSecret, ':SecretString:password}}' ]]
       BackupRetentionPeriod: 0
