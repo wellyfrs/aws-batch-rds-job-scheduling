@@ -1,4 +1,4 @@
-AWSTemplateFormatVersion: '2010-09-09'
+AWSTemplateFormatVersion: '2021-03-15'
 Description: 'Cloudformation for provisioning service required to schedule and execute RDS jobs using AWS Batch'
 Parameters:
   Subnet:
