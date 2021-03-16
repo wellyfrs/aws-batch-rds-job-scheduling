@@ -331,7 +331,7 @@ Resources:
     Type: AWS::Events::Rule
     Properties:
       Description: Rule for Amazon CloudWatch Events to trigger a AWS Batch job
-      ScheduleExpression: "cron(0/15 * * * ? *)"
+      ScheduleExpression: "cron(0 0 1 1 *)"
       Name: !Join
         - '-'
         - - !Ref 'AWS::StackName'
