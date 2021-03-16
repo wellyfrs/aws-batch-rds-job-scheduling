@@ -13,7 +13,7 @@ Resources:
   DBInstance:
     Type: AWS::RDS::DBInstance
     Properties:
-      AllocatedStorage: 20
+      AllocatedStorage: 5
       DBInstanceClass: db.m4.large
       DBName: "mysqldb"
       Engine: "mysql"
